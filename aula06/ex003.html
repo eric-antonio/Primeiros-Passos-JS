@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03 Curso de JS</title>
+    <style>
+        body{
+            background-color: rgb(158, 208, 252);
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da Maldição!</p>
+
+    <script>
+
+        var n1 , n2 , soma // aparentemente é possivel declarar varias variaveis na mesma linha!
+        /*O window.prompt() interpreta os valores recebidos como uma string!
+            E em JS o simbolo de + é usado para adição é concatenação!
+            Logo se vamos usar o comando prompt devemos fazer a converção!
+
+            -------Converções de String para Numeros--------
+            --Number.parseInt();
+            --Number.parseFloat()
+            --Number() o number independentemente do valor ser ele faz a soma!
+
+            -------Converções de Numeros para String---------
+            --Strig()
+            --n.toString()
+
+            ------Formatções em Js------
+            -`o aluno ${nome} com ${idade} tirou ${nota} ba sua defesa`
+
+        */
+        n1 = Number(window.prompt('Digite um Numero: '))
+        n2 = Number(window.prompt('Digite um Numero: '))
+        soma = n1 + n2
+        window.alert(`A soma entre ${n1} + ${n2} = ${soma}`)
+
+    </script>
+</body>
+</html>
