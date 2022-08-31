@@ -1,5 +1,23 @@
 
 var a = window.document.getElementById('area')
-a.addEventListener('clicar', clicar)
-a.addEventListener('moussenter', entrar)
-a.addEventListener('mousseout', sair)
+
+a.addEventListener('click', clicar)
+a.addEventListener('mouseenter', entrar)
+a.addEventListener('mouseout', sair)
+
+function clicar(){
+   
+    a.innerText = 'Clicou!'
+    a.style.background = 'orange'
+}
+
+function entrar(){
+    
+    a.innerText = 'Entrou!'
+    a.style.background = 'green'
+}
+
+function sair(){
+    a.innerText = 'Saiu!'
+    a.style.background = 'red'
+}
