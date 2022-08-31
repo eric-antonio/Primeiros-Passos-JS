@@ -16,3 +16,4 @@ corpo.style.background = 'black'
 var d = window.document.getElementById('dv1')
 d.style.color = 'blue'
 d.style.background = 'cyan'
+d.innerText = 'Alterando o texto no JS'
