@@ -37,6 +37,12 @@
         input{
             padding-left: 10px;
         }
+        p,
+        label {
+            font: 1rem 'Fira Sans', sans-serif;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -46,6 +52,24 @@
             <input type="button" id="verificar" value="Verificar" onclick="ver()">
             <div id="res">Resultado</div>
         </div>
+        <fieldset>
+            <legend>Select a maintenance drone:</legend>
+        
+            <div>
+              <input type="radio" id="rd1" name="drone" value="huey">
+              <label for="huey">Masculino</label>
+            </div>
+        
+            <div>
+              <input type="radio" id="rd2" name="drone" value="dewey" checked>
+              <label for="dewey">Femenino</label>
+            </div>
+        
+            <div>
+              <input type="radio" id="louie" name="drone" value="louie">
+              <label for="louie">Defoult</label>
+            </div>
+        </fieldset>
     </main>
     
 
@@ -55,9 +79,14 @@
         function ver(){
            var txt = window.document.getElementById('nc')
            var res = window.document.getElementById('res')
+           var rd  = window.document.getElementById('rd1')
+           var rd2  = window.document.getElementById('rd2')
 
-           if(txt.value == 'm'){
+           if(txt.value == 'Moçambique' || txt.value == 'Mozambique' || txt.value == 'MZ' ){
                 res.innerHTML = `${txt.value}`
+           }
+           if(rd2.value){
+                alert('f')
            }
           
         }
