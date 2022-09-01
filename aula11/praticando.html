@@ -42,10 +42,9 @@
 <body>
     <main>
         <div id="dv1">
-            <p>Aeroporto Internacional De Mavalane</p>
-            <input type="text" placeholder="Insira a sua Nacionalidade" id="txtnc">
-            <input type="button" onclick="verificar()" value="Submeter">
-    
+            <input type="text" name="nc" id="nc" placeholder="Nacionalidade">
+            <input type="button" id="verificar" value="Verificar" onclick="ver()">
+            <div id="res">Resultado</div>
         </div>
     </main>
     
@@ -53,10 +52,14 @@
     
     
     <script>
+        function ver(){
+           var txt = window.document.getElementById('nc')
+           var res = window.document.getElementById('res')
 
-        function verifica(){
-            var txtnc = window
-
+           if(txt.value == 'm'){
+                res.innerHTML = `${txt.value}`
+           }
+          
         }
     </script>
 </body>
