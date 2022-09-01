@@ -9,6 +9,26 @@
 <body>
     <h1>Sistema de Multas</h1>
     <input type="number" name="txtvel" id="txtvel" placeholder="Velocidade do Caro em Km/H">
-    <input type="button" name="verificar" id="verificar" value="verificar">
+    <input type="button"  id="verificar" value="verificar" onclick="calcular()">
+    <div id="res">Resultado</div>
+
+
+
+    <script>
+        function calcular(){
+            var txtv = window.document.getElementById('txtvel')
+            var res = window.document.querySelector('#res')
+            var vel = Number(txtv.value)
+            res.innerHTML= `A sua velocidade actual é de: ${vel}km/h`
+            if(vel > 70){
+                res.innerHTML = `<p> O senhor tem uma Multa de 4000,00MT</p>`
+            }else if(vel < 69){
+                res.innerHTML = `<p>Faça uma boa viagem Sr!</p>`
+            }
+            res.innerHTML += `<p>Dira com Prudencia!</p>`
+            
+
+        }
+    </script>
 </body>
 </html>
