@@ -3,6 +3,6 @@ if(idade < 18){
     console.log(`Menor de Idade!`)
 }else if(idade <= 18 ){
     console.log(`Voto Opcional!`)
-} else if (idade >= 21){
+} else {
     console.log(`FPD Vai votar!`)
 }
