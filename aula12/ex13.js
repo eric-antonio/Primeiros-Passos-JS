@@ -25,6 +25,7 @@ switch(diaSem){
         console.log('Sabado')
         break
     default:
+        console.log('Erro Falhouu!')
         break
     
 }
