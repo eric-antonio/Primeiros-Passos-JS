@@ -1,12 +1,12 @@
 body{
-    background-color: rgba(0, 190, 248, 0.904);
+    background-color: bisque;
     font: normal 18px Arial;
 
 
 }
 
 header{
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
 
 }
@@ -22,7 +22,7 @@ section{
 
 footer{
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     font-style: italic;
 
 }
