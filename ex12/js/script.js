@@ -2,6 +2,7 @@ function caregar(){
     var msg = window.document.getElementById('msg')
     var imagem = window.document.getElementById('imagem')
     var p = window.document.getElementById('p')
+    var tt = window.document.getElementById('titulo')
     var data =  new Date()
     var hora = data.getHours()
     var minutos = data.getMinutes()
@@ -11,6 +12,7 @@ function caregar(){
     if(hora >= 0 && hora < 12){
         window.document.body.style.background = 'antiquewhite'
         p.style.color='black'
+        tt.style.color='grey'
         imagem.src = 'img/foto-morning.jpg'
         msg.innerHTML = `Bom Dia! <br> Agora são ${hora}h:${minutos}m.`
 
