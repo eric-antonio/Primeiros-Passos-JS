@@ -28,13 +28,13 @@ function verificar(){
        }else if(fsex[1].checked){
             genero = 'Mulher'
             if(idade >=0 && idade <= 10){
-                //crian'ca
+                img.setAttribute('src','img/criancas/foto-menina.jpg')
             }else if(idade < 21){
-                //jovem
+                img.setAttribute('src','img/jovens/foto-rapariga.jpg')
             }else if(idade < 50){
-                //adulto
+                img.setAttribute('src','img/adulto/foto-adulta.jpg')
             }else{
-                //idoso
+                img.setAttribute('src','img/idosos/foto-idosa.jpg')
             }
        }
        res.style.textAlign = 'center'
