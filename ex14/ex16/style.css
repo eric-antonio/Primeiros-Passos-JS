@@ -26,3 +26,12 @@ footer{
     font-style: italic;
 
 }
+p{
+    margin-bottom: -10px;
+    margin-left: 10px;
+}
+#in{
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
