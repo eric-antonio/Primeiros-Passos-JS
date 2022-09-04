@@ -16,7 +16,7 @@
 }*/
 
 let num = window.document.getElementById('num')
-let list = document.getElementById('flista')
+let lista = document.getElementById('flista')
 var res = document.getElementById('res')
 var valores = []
 
@@ -41,7 +41,12 @@ function inLista(n, l){
 function adicionar(){
     if(isNumero(num.value) && !inLista(num.value, valores)){
         valores.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text=`Numero ${num.value} adicionado!`
+        lista.appendChild(item)
     }else{
         window.alert('Valaor ivalido ou ja ADD!')
     }
+    num.value = ''
+    num.focus()
 }
