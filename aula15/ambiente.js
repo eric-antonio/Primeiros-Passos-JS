@@ -1,2 +1,4 @@
-let num = [1,2,3,4,5]
-console.log(`O nosso vector e ${num}`)
+let num = [14,90,33,54,25]
+num.push(1)
+num.sort()
+console.log(`O nosso vector e ${num} e tem ${num.length}`)
