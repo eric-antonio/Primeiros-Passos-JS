@@ -44,6 +44,7 @@ function adicionar(){
         let item = document.createElement('option')
         item.text=`Numero ${num.value} adicionado!`
         lista.appendChild(item)
+        
     }else{
         window.alert('Valaor ivalido ou ja ADD!')
     }
@@ -57,7 +58,28 @@ function adicionar(){
         alert('ADIONE ALGO CRL')
     }else{
         let tot  = valores.length
+        var  maior =  valores[0]
+        var menor =  valores[0]
+
+        var soma =0
+        var media = 0
+        for(let pos in valores){
+            soma += valores[pos]
+            media = soma / valores.length
+            if(valores[pos] > maior){
+                maior = valores[pos]
+            }
+            if(valores[pos] < menor){
+                menor = valores[pos]
+            }
+        }
+
+
         res.innerHTML = ''
-        res.innerHTML += `<p> Ao todo temos ${tot}</p>`
+        res.innerHTML += `<p> Ao todo temos:  ${tot}</p>`
+        res.innerHTML += `<p> O maior foi :  ${maior}</p>`
+        res.innerHTML += `<p> O menor foi:  ${menor}</p>`
+        res.innerHTML += `<p> A soma deu:  ${soma}</p>`
+        res.innerHTML += `<p> A media é :  ${media}</p>`
     }
 }
