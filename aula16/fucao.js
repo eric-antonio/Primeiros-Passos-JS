@@ -9,5 +9,5 @@ function ip(n){
     }
 }
 
-let res = ip(4)
+let res = ip(43)
 console.log(res)
