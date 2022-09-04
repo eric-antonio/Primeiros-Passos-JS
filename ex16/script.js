@@ -1,1 +1,4 @@
-alert('Ola, Mundo!')
+function adicionar(){
+    let lista = []
+    
+}
